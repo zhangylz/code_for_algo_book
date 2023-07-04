@@ -13,17 +13,17 @@ typedef struct tagGNode
 {
     int i;
     int j;
-}GNODE;
+} GNODE;
 
 typedef struct tagDijkstraGraph
 {
-    std::vector<GNODE> nodes;
+    std::vector<GNODE> nodes; // vertices
     int adj[N_NODE][N_NODE];
     int prev[N_NODE];
     int dist[N_NODE];
     int source;
     int target;
-}DIJKSTRA_GRAPH;
+} DIJKSTRA_GRAPH;
 
 void DijkstraGraphFromGridDef(DIJKSTRA_GRAPH *graph, GRID_CELL *gc, GRID_INIT *gi);
 void Dijkstra(DIJKSTRA_GRAPH *graph, GRID_CELL *gc);

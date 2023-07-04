@@ -12,7 +12,7 @@
 
 struct ANODE
 {
-    bool operator== (const ANODE& n)
+    bool operator== (const ANODE& n) const
     {
         if((i == n.i) && (j == n.j))
         {

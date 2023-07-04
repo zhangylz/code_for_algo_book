@@ -193,9 +193,11 @@ void AStar(ASTAR_GRAPH *graph, GRID_CELL *gc, DistanceFuncPtr dist_func)
                 {
                     if((cur_node.g + 1.0) < it->g)
                     {
+                        /*
                         it->g = cur_node.g + 1.0;
                         it->prev_i = cur_node.i;
                         it->prev_j = cur_node.j;
+                        */
                     }
                 }
             }
